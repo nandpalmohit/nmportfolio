@@ -1,0 +1,419 @@
+/*----------------mobile view-------------------*/
+@media screen and (max-width: 426px){
+
+.tablist .tab{	
+	margin: 0px; 
+	display: inline-flex;
+	position: fixed;
+	top: 0%;
+	left: 26%;
+	background-image: none;
+	width: 100%;
+	overflow: hidden;
+	height: 20%;
+  	z-index: 1;
+}
+
+.tablist .tab a{
+	font-family: 'Didact Gothic', sans-serif;
+	padding: 10px 20px 0px 20px;
+	border: none;
+	cursor: alias;
+}
+.tablist .tab hr{
+	border: none;
+	border-radius: 20px;
+	 background: linear-gradient(to top, #ece9e6, #ffffff);
+	transition: 0.7s ease;
+	height: 20px;
+	width: 3px;
+	padding: 0px;
+}
+.tablist .tab a:hover hr{
+	height: 80px;
+	width: 3px;
+	background: linear-gradient(to top, #ece9e6, #F5F5F5);
+}
+/*-----tabcontent----*/
+.tablist .tabcontent{
+	margin: 25% 0px 10px 0px;
+	padding: 0px;
+  	width: 100%;
+  	z-index: 1;
+}
+/*--------home tab css---------*/
+.tablist .tabcontent p.tag {
+	font-size: 12px;
+	opacity: 0.4;
+}
+.tablist .tabcontent img{
+	width: 80%;
+	border-radius: 50%;
+}
+.tablist .tabcontent .fa {
+	border-radius: 20px;
+	padding: 10px 20px;
+ 	font-size: 16px;
+  	width: 18px;
+  	text-align: center;
+  	text-decoration: none;
+  	margin: 10px 5px;
+}
+.tablist .tabcontent .icon {
+	width: 100%;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow: hidden;
+}
+.fa-twitter, .fa-linkedin, .fa-instagram, .fa-envelope, .fa-github{
+	background: white;
+	color: black;
+	cursor: alias;
+	box-shadow: 0 0 5px white;
+}
+/*-------aboutme tab-----*/
+.tablist .tabcontent p.info{
+	font-size: 18px;
+	text-align: center;
+	line-height: 24px;
+	padding: 0px 10px;
+}
+.tablist .tabcontent p.info a
+{
+	cursor: alias;
+}
+.tablist .tabcontent hr {
+	margin: 20px 10px 20px 10px;
+}
+/*-------skills-------------*/
+.progress{
+	margin: 12px 0px;
+}
+.progress p{
+	width: 30%;
+	font-size: 14px;
+}
+
+.progressbar .skills p{
+	width: 90%;
+	font-size: 12px;
+}
+.progressbar .bar {
+	background: linear-gradient(to right, #d3cce3, #e9e4f0);
+	border-radius: 20px;
+}
+/*----------education tab----------*/
+.tablist .tabcontent .clg{
+	animation: img 5s linear 0s forwards;
+	margin: 0% 0px 20% 0px;
+
+}
+.tablist .tabcontent .clg img.bgimg {
+	width: 100%;
+	height: 200px;
+	border-radius: 0px;
+	box-shadow: none;
+	float: none;
+	margin: 0px;
+	padding: 0px;
+	opacity: 0.2;
+}
+.tablist .tabcontent .clg .content{
+	border: 1px solid grey;
+	float: none;
+	width: 80%;
+	border-radius: 5px;
+	text-transform: uppercase;
+	padding: 5% 3%;
+	margin: -180px 7% 0px 7%;
+
+}
+.tablist .tabcontent .clg .content p.ch{
+	opacity: 1;
+	padding: 0px 0px 10px 0px;
+	font-weight: 900;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+.tablist .tabcontent .clg hr{
+	margin: 5px 20%;
+	width: 60%;
+}
+/*--------table content------*/
+#datatable{
+	margin: -30px 5% 10px 5%;
+	width: 90%;
+	animation: dt 5s ease 0s forwards;
+}
+#datatable th,td{
+	cursor: alias;
+}
+
+/*----footer-----*/
+p.footer
+{
+	cursor: alias;
+	bottom: 15px;
+	opacity: 0.4;
+	font-size: 8px; 
+	z-index: 0;
+}
+
+/*-------animation---------*/
+@keyframes parag{
+	 0%{
+	 	opacity: 0;
+	 	overflow: hidden;
+	 	height: 0px;
+	 }
+  100%{
+  		opacity: 1;
+  		overflow: hidden;
+  		height: 170px;
+  	}
+}
+@keyframes progressbar{
+	0%{
+		width: 1%;
+		box-shadow: 0 0 5px transparent;
+	}
+	100%{
+		width: all;
+		box-shadow: 0 0 5px white;
+	}
+}
+
+@keyframes img{
+	0%{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes dt {
+	0%{
+		background-color: transparent;
+	}
+	70%{
+	background-color: transparent;
+	}
+	100%{
+  	background-color: #35325c;
+	}
+}
+
+}
+/*---------tablet devices css-------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+.tablist .tab{	
+	margin: 0px; 
+	display: inline-flex;
+	position: fixed;
+	top: 0%;
+	left: 35%;
+	background-image: none;
+	width: 100%;
+	overflow: hidden;
+	height: 18%;
+  	z-index: 1;
+}
+.tablist .tab a{
+	font-family: 'Didact Gothic', sans-serif;
+	padding: 10px 20px 0px 20px;
+	border: none;
+	cursor: alias;
+}
+.tablist .tab hr{
+	border: none;
+	border-radius: 20px;
+	 background: linear-gradient(to top, #ece9e6, #ffffff);
+	transition: 0.7s ease;
+	height: 20px;
+	width: 3px;
+	padding: 0px;
+}
+.tablist .tab a:hover hr{
+	height: 120px;
+	width: 3px;
+	background: linear-gradient(to top, #ece9e6, #F5F5F5);
+}
+.tablist .tabcontent{
+	margin: 20% 5% 20px 5%;
+	padding: 0px;
+  	width: 90%;
+  	border : none;
+  	color: white;
+}
+.tablist .tabcontent h3{
+	font-size: 36px;
+}
+.tablist .tabcontent img{
+	width: 80%;
+	border-radius: 50%;
+}
+.tablist .tabcontent .fa {
+	border-radius: 20px;
+	padding: 10px 26px;
+ 	font-size: 24px;
+  	width: 30px;
+  	text-align: center;
+  	text-decoration: none;
+  	margin: 10px;
+}
+.tablist .tabcontent .icon {
+	width: 100%;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow: hidden;
+}
+.fa-twitter, .fa-linkedin, .fa-instagram, .fa-envelope, .fa-github{
+	background: white;
+	color: black;
+	cursor: alias;
+	box-shadow: 0 0 5px white;
+}
+/*-------aboutme tab-----*/
+.tablist .tabcontent p.info{
+	font-size: 24px;
+	text-align: center;
+	line-height: 32px;
+	padding: 0px 10px;
+}
+.tablist .tabcontent p.info a
+{
+	font-size: 26px;
+	cursor: alias;
+}
+.tablist .tabcontent hr {
+	margin: 20px 10px 20px 10px;
+}
+/*-------skills-------------*/
+.progress{
+	margin: 20px 0px;
+}
+.progress p{
+	width: 30%;
+	font-size: 20px;
+}
+
+.progressbar .skills p{
+	width: 95%;
+	font-weight: 700;
+	font-size: 16px;
+}
+.progressbar .bar {
+	background: linear-gradient(to right, #d3cce3, #e9e4f0);
+	border-radius: 20px;
+}
+/*----------education tab----------*/
+.tablist .tabcontent .clg{
+	animation: img 5s linear 0s forwards;
+	margin: 10px 0px 20% 0px;
+}
+.tablist .tabcontent .clg img.bgimg {
+	width: 100%;
+	height: 270px;
+	border-radius: 0px;
+	box-shadow: none;
+	float: none;
+	margin: 0px;
+	padding: 0px;
+	opacity: 0.1;
+}
+.tablist .tabcontent .clg .content{
+	border: 1px solid grey;
+	float: none;
+	width: 80%;
+	border-radius: 5px;
+	text-transform: uppercase;
+	padding: 5% 3%;
+	margin: -230px 7% 0px 7%;
+
+}
+.tablist .tabcontent .clg .content p.ch{
+	opacity: 1;
+	padding: 0px 0px 10px 0px;
+	font-weight: 900;
+	letter-spacing: 3px;
+	cursor: pointer;
+	font-size: 24px;
+}
+.tablist .tabcontent .clg .content p{
+	font-size: 20px;
+}
+.content p small.year{
+	opacity: .5;
+	font-size: 18px;
+}
+.tablist .tabcontent .clg hr{
+	margin: 5px 20%;
+	width: 60%;
+}
+/*--------table content------*/
+#datatable{
+	margin: -30px 5% 10px 5%;
+	width: 90%;
+	animation: dt 5s ease 0s forwards;
+}
+#datatable th,td{
+	cursor: alias;
+	font-size: 20px;
+}
+
+/*----footer-----*/
+p.footer
+{
+	cursor: alias;
+	bottom: 15px;
+	opacity: 0.4;
+	font-size: 12px; 
+	z-index: 0;
+}
+/*-------animation---------*/
+@keyframes parag{
+	 0%{
+	 	opacity: 0;
+	 	overflow: hidden;
+	 	height: 0px;
+	 }
+  100%{
+  		opacity: 1;
+  		overflow: hidden;
+  		height: 200px;
+  	}
+}
+@keyframes progressbar{
+	0%{
+		width: 1%;
+		box-shadow: 0 0 5px transparent;
+	}
+	100%{
+		width: all;
+		box-shadow: 0 0 5px white;
+	}
+}
+
+@keyframes img{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes dt {
+	0%{ background-color: transparent; }
+	70%{ background-color: transparent; }
+	100%{ background-color: #35325c; }
+}
+
+}

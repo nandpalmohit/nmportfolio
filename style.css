@@ -1,0 +1,357 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background: #0f0c29;
+	background: -webkit-linear-gradient(to top, #24243e, #0f0c29);
+	background: linear-gradient(to top, #24243e, #0f0c29);
+	background-attachment: fixed;
+	color: white;
+	min-height: 600px;
+}
+/*---------small divs-----*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.circle{
+	border: none;
+  	background-color: none;
+  	box-shadow: 0px 0px 20px #383854;
+	border-radius: 50%;
+}
+/*--------tablist------*/
+.tablist{
+	font-family: 'Quicksand', sans-serif;
+}
+/*----------tab css---------*/
+.tablist .tab{
+	overflow-x: hidden;	
+	position: fixed;
+	top: 40%;
+	left: 0%;
+	float: left;
+	background-color: transparent;
+	width: 10%;
+	overflow: hidden;
+}
+.tablist .tab a{
+	font-family: 'Didact Gothic', sans-serif;
+	display: block;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+}
+.tablist .tab hr{
+	padding: 2px;
+	border: none;
+	border-radius: 10px;
+	background: linear-gradient(to right, #ece9e6, #ffffff);
+	transition: 0.5s ease;
+	width: 20px;
+}
+.tablist .tab a:hover hr{
+	width: 80px;
+	background: linear-gradient(to right, #ece9e6, #F5F5F5);
+	border-radius: 10px;
+}
+/*-----tabcontent----*/
+.tablist .tabcontent{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 20px 20px 20px 20px;
+  	width: 80%;
+  	border : none;
+  	color: white;
+}
+/*--------home tab css---------*/
+.tablist .tabcontent h3{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 10px;
+}
+.tablist .tabcontent img{
+	text-align: center;
+	width: 35%;
+	margin-bottom: 20px;
+} 
+.tablist .tabcontent p.tag {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-align: center;
+	padding-bottom: 50px;
+	letter-spacing: 5px;
+	opacity: .5;
+}
+/*------about me tab-------*/
+.tablist .tabcontent p.info{
+	font-size: 18px;
+	font-family: 'Karla', sans-serif;
+	line-height: 28px;
+	padding-left: 10px;
+	animation: parag 5s;
+}
+.tablist .tabcontent p.info a
+{
+	font-family: 'Merienda', cursive;
+	font-weight: 562;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+	animation: parag 5s;
+}
+.tablist .tabcontent hr {
+	margin: 20px 0px 30px 0px;
+	opacity: .1;
+}
+.tablist .tabcontent button{
+	background: transparent;
+	border: 1px solid #e7e7e7;
+	font-size: 12px;
+	padding: 12px 8px;
+	color: white;
+	width: 40%;
+	margin: 5px 30%;
+	border-radius: 20px;
+	}
+/*-------skills----------*/
+.progress{
+	width: 100%;
+	margin: 16px 0px;
+	display: inline-flex;
+}
+.progress p{
+	text-align: center;
+	width: 20%;
+	font-family: 'Karla', sans-serif;
+	font-size: 18px;
+	color: white;
+	padding: 0px 10px;
+	line-height: 20px;
+	text-transform: uppercase;
+	opacity: 0.7;
+}
+.progressbar {
+  width: 100%;
+  background: none;
+  border-radius: 20px;
+}
+.progressbar .skills p{
+	width: 95%;
+  	text-align: right; /* Right-align text */
+  	font-size: 14px;
+  	opacity: 0.9;
+  	font-weight: 700;
+  	color: black; 
+}
+.progressbar .bar {
+	background: linear-gradient(45deg, #d3cce3, #e9e4f0);
+	border-radius: 20px;
+	box-shadow: 0 0 5px white;
+	animation: progressbar 5s ease-out 0s forwards;
+}
+
+/*----education------*/
+.tablist .tabcontent .clg{
+	animation: img 5s linear 0s forwards;
+	cursor: pointer;
+}
+.tablist .tabcontent .clg img.bgimg {
+	width: 60%;
+	height: 200px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px white;
+	float: left;
+	cursor: pointer;
+}
+.tablist .tabcontent .clg .content{
+	float: right;
+	width: 38%;
+	margin-right: 0px;
+	text-transform: uppercase;
+}
+.tablist .tabcontent .clg .content p.ch{
+	text-transform: uppercase;
+	text-align: center;
+	opacity: 0.6;
+	margin: 0px;
+	padding: 0px;
+	font-weight: 900;
+	letter-spacing: 3px;
+	padding-top: 40px;
+	cursor: pointer;
+}
+.tablist .tabcontent .clg hr{
+	margin: 20px 5%;
+	width: 90%;
+}
+.content p{
+	letter-spacing: 1px;
+	text-align: center;
+}
+.content p small.year{
+	opacity: .5;
+}
+
+/*------table-------*/
+#datatable{
+	cursor: pointer;
+	text-align: left;
+	border-collapse: collapse;
+	margin: -30px 10% 10px 10%;
+	width: 80%;
+	background-color: #35325c;
+	border-radius: 20px;
+}
+#datatable td, #datatable th {
+  	padding: 8px 12px;
+  	border-radius: 20px;
+  	animation: tabledata 8s ease-in 0s;
+}
+#datatable tr{
+	opacity: .7;
+}
+#datatable tr:hover {
+	opacity: 1;
+	font-weight: 600;
+	color: lavender;
+}
+#datatable th {
+ 	padding-top: 12px;
+ 	border-bottom: 1px dotted #24243e;
+  	padding-bottom: 12px;
+  	text-align: left;
+  	color: white;
+  	font-size: 18px;
+}
+/*------icons------*/
+.tablist .tabcontent .icon {
+	width: 100%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow: hidden;
+}
+.tablist .tabcontent .fa {
+	border-radius: 20px;
+	padding: 10px;
+ 	font-size: 20px;
+  	width: 45px;
+  	text-align: center;
+  	text-decoration: none;
+  	margin: 5px 5px;
+}
+.fa-twitter{
+	background: #006db5;
+  	color: white;
+}
+.fa-linkedin {
+  	background: #007bb5;
+  	color: white;
+}
+.fa-instagram {
+  	background-color: #ff4d2e;
+  	color: white;
+}
+.fa-github {
+	background: #000;
+	color: white;
+}
+.fa-envelope {
+	background: #ff4800;
+	color: white;
+}
+/*-----footer--------*/
+p.footer
+{
+	font-family: 'Quicksand', sans-serif;
+	cursor: pointer;
+	margin: 0px;
+	position: fixed;
+	text-align: center;
+	left: 26%;
+	bottom: 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+	opacity: .8;
+	font-size: 10px; 
+	text-align: center;
+	letter-spacing: 3px;
+}
+p.footer:hover{
+	opacity: 1;
+}
+/*-----custom scrollbar--------*/
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 50px #141e30; 
+  border-radius: 0px;
+} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: IndianRed;
+	opacity: .5;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: Snow; 
+}
+
+@keyframes parag{
+	 0%{
+	 	opacity: 0;
+	 	overflow: hidden;
+	 	height: 0px;
+	 }
+  100%{
+  		opacity: 1;
+  		overflow: hidden;
+  		height: 114px;
+  	}
+}
+@keyframes progressbar{
+	0%{
+		width: 1%;
+	}
+	100%{
+		width: all;
+	}
+}
+
+@keyframes img{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes tabledata{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
