@@ -165,7 +165,7 @@ body{
 }
 .tablist .tabcontent .clg img.bgimg {
 	width: 60%;
-	height: 200px;
+	height: 100%;
 	border-radius: 10px;
 	box-shadow: 0 0 5px white;
 	float: left;
@@ -353,5 +353,14 @@ p.footer:hover{
 	}
 	100%{
 		opacity: 1;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	.tablist .tabcontent .mgn
+	{
+	max-width: 80%; 
+	margin-left: 10%;
+	margin-right: 10%;
 	}
 }
